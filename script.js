@@ -25,7 +25,7 @@ else {
   document.body.className = 'int-notation';
 }
 
-document.getElementById('change-notation').href="/?n="+nString+"&notation="+otherNotation;
+document.getElementById('change-notation').href="?n="+nString+"&notation="+otherNotation;
 
 
 
@@ -45,7 +45,7 @@ function createListItem(n) {
   if(notation=='set')  anchor.innerHTML = writeSetNotation(n);
   else anchor.innerHTML = n;
 
-  anchor.href = "/?n="+n;
+  anchor.href = "?n="+n;
   item.id = n;
   item.appendChild(anchor);
   list.appendChild(item);
