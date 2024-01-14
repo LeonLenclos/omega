@@ -2,9 +2,11 @@ let params = new URLSearchParams(document.location.search);
 
 let nString = params.get("n");
 let n;
-if (nString == 'ω') n = Infinity;
-else n = parseInt(nString, 10);
-
+if (nString == 'omega') n = Infinity;
+else {
+  n = parseInt(nString, 10);
+  if(isNaN(n)){n = 0};
+}
 
 let ITEMS_BY_PAGE;
 let page = 0;
@@ -28,7 +30,7 @@ document.getElementById('change-notation').href="/?n="+nString+"&notation="+othe
 
 
 
-if(isNaN(n)){};
+
 
 
 let header = document.getElementById('header');
