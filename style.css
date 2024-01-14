@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color:#333;
+  font-family: monospace;
+    font-size :11pt;
+}
+
+#about-page {
+    max-width:500px;
+  margin:auto;
+}
+nav a {
+  text-decoration: none;
+}
+a, nav a:visited{
+  color: #000;
+  font-weight: bold;
+}
+
+a:visited {
+    color: #888;
+}
+
+
+ol li {
+list-style:none;
+white-space: nowrap;
+
+}
+
+.set-notation ol::before {
+  content:'{';
+}
+
+.set-notation ol::after {
+  content:'}';
+}
+
+.set-notation ol li::after {
+  content:',';
+}
+
+.set-notation ol li:last-of-type::after {
+  content:'';
+}
+
+
+#change-notation {
+   color: #888;
+}
+
+.int-notation #change-notation .set-notation {
+  color: #000;
+}
+.set-notation #change-notation .int-notation {
+  color: #000;
+}
+
+nav {
+  height: 2em;
+  display: flex;
+  justify-content:space-between;
+    margin:0;
+    padding: 0;
+
+}
+
+h1 {
+  font-size: 1em;
+  text-align: center;
+  margin:0;
+  padding: 0;
+}
+
+ol {
+  height: calc(100vh - 5em);
+  border : 3px inset;
+  overflow: scroll;
+  margin:0 auto;
+  max-width:500px;
+}
+
+
