@@ -45,7 +45,7 @@ function createListItem(n) {
   if(notation=='set')  anchor.innerHTML = writeSetNotation(n);
   else anchor.innerHTML = n;
 
-  anchor.href = "?n="+n;
+  anchor.href = "?n="+n+"&notation="+notation;
   item.id = n;
   item.appendChild(anchor);
   list.appendChild(item);
